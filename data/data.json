@@ -1,0 +1,29 @@
+[{
+ "name": "Adam",
+ "job": "priest",
+ "salary": 1500,
+ "hair": "red",
+ "av": true,
+ "thumb": "content/img/b5b493b5-c29e-49cf-98e9-dfe50088b35d.jpg"
+}, {
+ "name": "Papon",
+ "job": "president",
+ "salary": 1800,
+ "hair": "black",
+ "av": true,
+ "thumb": "content/img/ilya-pavlov-87438-unsplash.jpg"
+}, {
+ "name": "Zyan",
+ "job": "singer",
+ "salary": 1000,
+ "hair": "gold",
+ "av": true,
+ "thumb": "content/img/IMG_20180320_213304_HDR.jpg"
+}, {
+ "name": "Ryan",
+ "job": "actor",
+ "salary": 1200,
+ "hair": "blue",
+ "av": true,
+ "thumb": "content/img/pexels-photo-415484.jpeg"
+}]

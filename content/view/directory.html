@@ -1,0 +1,24 @@
+
+      <button ng-click="order='name'">Order by Name</button>
+      <button ng-click="order='hair'">Order by Hair</button>
+        <input type="text" ng-model="dataPicker" placeholder="type"/>
+        <div class="content">
+        <div class="list">
+          <ul>
+            <li ng-repeat="datas in data |orderBy: order |filter: dataPicker" ng-show="datas.av">
+              <img ng-src="{{datas.thumb}}" style="width:25px; height: 25px; border-radius: 50%; float: left; margin-right: 10px; " ng-show="datas.thumb"/>
+             <h5>{{datas.name}}-{{datas.salary|currency: "&#8377;"}}</h5>
+              <div class="remove" ng-click="removeIt(datas)">x</div>
+              <span style="background:{{datas.hair}}">{{datas.hair}}</span>
+            </li>
+          </ul>
+        </div>
+        </div>     
+        <form ng-submit="addData()">
+            <input type="text" ng-model="newData.name" placeholder="Name" />
+            <input type="text" ng-model="newData.job" placeholder="Job" />
+            <input type="text" ng-model="newData.salary" placeholder="Salary" />
+            <input type="text" ng-model="newData.hair" placeholder="Hair" />
+            <input type="submit" value="Add Data" />
+        </form>
+        <button ng-click="removeAll()">Remove All</button>
